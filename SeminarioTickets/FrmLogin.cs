@@ -14,18 +14,13 @@ namespace SeminarioTickets
     public partial class FrmLogin : Form
     {
 
-        private FrmMenu formulario1;
         public FrmLogin()
         {
 
             InitializeComponent();
         }
 
-        public FrmLogin(FrmMenu formulario1)
-        {
-            this.formulario1 = formulario1;
-            InitializeComponent();
-        }
+ 
 
 
         //Conexión con Base

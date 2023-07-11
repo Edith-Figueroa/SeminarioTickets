@@ -12,10 +12,13 @@ namespace SeminarioTickets
 {
     public partial class FrmMenu : Form
     {
+
         public FrmMenu()
         {
             InitializeComponent();
         }
+
+      
         //CONFIGURACIÓN
         //CLIENTES
         //Nuevo Cliente
@@ -392,23 +395,11 @@ namespace SeminarioTickets
             frmUsuarios.Show();
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
     }
 }

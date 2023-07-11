@@ -13,10 +13,15 @@ namespace SeminarioTickets
 {
     public partial class FrmLogin : Form
     {
+
         public FrmLogin()
         {
+
             InitializeComponent();
         }
+
+ 
+
 
         //Conexión con Base
         Conexion con = new Conexion();
@@ -37,12 +42,25 @@ namespace SeminarioTickets
                     //this.Hide();
                     if (Convert.ToInt32(dt.Rows[0][2].ToString()) == 1)
                     {
-                        MessageBox.Show("Bienvenido Gerente");
+                        //Abrir Menú
+                        FrmMenu frmMenu = new FrmMenu();
+                        frmMenu.Show();
+                        this.Hide();
+                        //Mensaje de Bienvenida
+                        MessageBox.Show("Bienvenido Administrador");
+
                     }
                 }
                 if (Convert.ToInt32(dt.Rows[0][2].ToString()) == 2)
                 {
+                    //Abrir Menú
+                    FrmMenu frmMenu = new FrmMenu();
+                    frmMenu.Show();
+                    this.Hide();
+                    //Mensaje de Bienvenida
                     MessageBox.Show("Bienvenido Usuario");
+
+
                 }
                 else
                 {

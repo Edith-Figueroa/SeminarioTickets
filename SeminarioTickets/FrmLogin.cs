@@ -48,17 +48,25 @@ namespace SeminarioTickets
                         this.Hide();
                         //Mensaje de Bienvenida
                         MessageBox.Show("Bienvenido Administrador");
+                        //Limpiar Campos
+                        textBox1.Clear();
+                        textBox2.Clear();
+                        textBox1.Focus();
 
                     }
                 }
                 if (Convert.ToInt32(dt.Rows[0][2].ToString()) == 2)
                 {
                     //Abrir Menú
-                    FrmMenu frmMenu = new FrmMenu();
+                    FrmMenuUsu frmMenu = new FrmMenuUsu();
                     frmMenu.Show();
                     this.Hide();
                     //Mensaje de Bienvenida
                     MessageBox.Show("Bienvenido Usuario");
+                    //Limpiar Campos
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox1.Focus();
 
 
                 }
@@ -70,7 +78,9 @@ namespace SeminarioTickets
             }
             catch (Exception ex)
             {
-
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox1.Focus();
                 MessageBox.Show("Usuario o Contraseña Incorrecto");
 
             }

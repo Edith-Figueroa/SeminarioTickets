@@ -43,6 +43,7 @@
             this.seminarioTicketsDataSet = new SeminarioTickets.SeminarioTicketsDataSet();
             this.lugaresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cmbEvento = new System.Windows.Forms.ComboBox();
+            this.tipoEventosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.tipoEventosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tipoEventosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.seminarioTicketsDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -65,7 +66,6 @@
             this.lugaresTableAdapter2 = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.LugaresTableAdapter();
             this.eventosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.eventosTableAdapter = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.EventosTableAdapter();
-            this.tipoEventosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.tipoEventosTableAdapter2 = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.TipoEventosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lugaresBindingSource3)).BeginInit();
@@ -73,19 +73,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.lugaresBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lugaresBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lugaresBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(10, 342);
+            this.btnGuardar.Location = new System.Drawing.Point(158, 342);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(80, 33);
             this.btnGuardar.TabIndex = 9;
@@ -196,6 +196,11 @@
             this.cmbEvento.Size = new System.Drawing.Size(200, 24);
             this.cmbEvento.TabIndex = 3;
             this.cmbEvento.ValueMember = "IdEvn";
+            // 
+            // tipoEventosBindingSource3
+            // 
+            this.tipoEventosBindingSource3.DataMember = "TipoEventos";
+            this.tipoEventosBindingSource3.DataSource = this.seminarioTicketsDataSet11;
             // 
             // tipoEventosBindingSource2
             // 
@@ -323,7 +328,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(136, 342);
+            this.btnEliminar.Location = new System.Drawing.Point(158, 342);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(80, 33);
             this.btnEliminar.TabIndex = 27;
@@ -334,9 +339,9 @@
             // btnActualizar
             // 
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(254, 342);
+            this.btnActualizar.Location = new System.Drawing.Point(158, 342);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(80, 33);
+            this.btnActualizar.Size = new System.Drawing.Size(106, 33);
             this.btnActualizar.TabIndex = 28;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -359,11 +364,6 @@
             // eventosTableAdapter
             // 
             this.eventosTableAdapter.ClearBeforeFill = true;
-            // 
-            // tipoEventosBindingSource3
-            // 
-            this.tipoEventosBindingSource3.DataMember = "TipoEventos";
-            this.tipoEventosBindingSource3.DataSource = this.seminarioTicketsDataSet11;
             // 
             // tipoEventosTableAdapter2
             // 
@@ -405,13 +405,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.lugaresBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lugaresBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lugaresBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eventosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tipoEventosBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

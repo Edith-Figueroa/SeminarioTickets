@@ -105,11 +105,11 @@
             this.dgvPuestos.ReadOnly = true;
             this.dgvPuestos.Size = new System.Drawing.Size(303, 186);
             this.dgvPuestos.TabIndex = 6;
-           // 
+            // 
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(215, 223);
+            this.btnEliminar.Location = new System.Drawing.Point(122, 223);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(82, 29);
             this.btnEliminar.TabIndex = 7;
@@ -120,7 +120,7 @@
             // btnActualizar
             // 
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(24, 223);
+            this.btnActualizar.Location = new System.Drawing.Point(122, 223);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(94, 29);
             this.btnActualizar.TabIndex = 8;

@@ -45,14 +45,14 @@
             this.colaboradoresTableAdapter = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.ColaboradoresTableAdapter();
             this.clientesTableAdapter = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.ClientesTableAdapter();
             this.dgvFacturas = new System.Windows.Forms.DataGridView();
+            this.Ticket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSubT = new System.Windows.Forms.TextBox();
             this.txtIsv = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.Ticket = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.colaboradoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
@@ -201,6 +201,21 @@
             this.dgvFacturas.Click += new System.EventHandler(this.dgvFacturas_Click);
             this.dgvFacturas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dgvFacturas_KeyPress);
             // 
+            // Ticket
+            // 
+            this.Ticket.HeaderText = "Ticket";
+            this.Ticket.Name = "Ticket";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
             // txtSubT
             // 
             this.txtSubT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -245,25 +260,11 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Total";
             // 
-            // Ticket
-            // 
-            this.Ticket.HeaderText = "Ticket";
-            this.Ticket.Name = "Ticket";
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            // 
             // FrmFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(810, 517);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);

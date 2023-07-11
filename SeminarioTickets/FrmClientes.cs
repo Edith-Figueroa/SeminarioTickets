@@ -155,5 +155,14 @@ namespace SeminarioTickets
             }
             
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            conexion.Modificaciones("exec BusquedaClientes '" + txtBuscar.Text + "' ");
+
+            //Visualización de datos de la base al DataGridView
+            conexion.Grids("SELECT * FROM Clientes WHERE   NomCli", dgvClientes);
+
+        }
     }
 }
